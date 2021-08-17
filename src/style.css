@@ -1,3 +1,15 @@
+.circle {
+  width: 200px;
+  height: 200px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background: teal;
+  opacity: 15%;
+}
+
 hr {
   border: 0;
   border-top: 10px solid teal;
