@@ -15,6 +15,12 @@
   background-color: white;
   padding: 15px 15px 15px 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.weather-app {
+  font-family: "Georama", sans-serif;
 }
 
 .circle {
