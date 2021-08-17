@@ -6,8 +6,7 @@
     rgb(145, 168, 208) 96.1%
   );
   background-size: cover;
-  width: auto;
-  height: auto;
+
   border: 2px solid white;
 }
 .container {
@@ -21,6 +20,19 @@
 
 .weather-app {
   font-family: "Georama", sans-serif;
+  padding: 15px 15px 15px 15px;
+  color: #415b90;
+}
+
+#city-search {
+  text-align: center;
+}
+
+.city-search-bar {
+  width: 350px;
+  text-align: center;
+  border: 3px solid #415b90;
+  border-radius: 20px;
 }
 
 .circle {
