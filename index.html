@@ -19,23 +19,53 @@
       <div class="container">
         <div class="weather-app">
           <div class="row">
-            <div class="col-2-md">
-              <form>
-                <input
-                  type="search"
-                  value="Enter a City or Zipcode"
-                  class="city-search-bar"
-                />
-                <input
-                  type="button"
-                  value="Search"
-                  class="city-search-button"
-                />
-              </form>
+            <form>
+              <input
+                type="search"
+                value="Enter a City or Zipcode"
+                class="city-search-bar"
+              />
+              <input type="button" value="Search" class="city-search-button" />
+            </form>
+          </div>
+          <div class="current-forecast">
+            <div class="circle">
+              <div class="current-weather-icon">Icon</div>
+              <div class="temperature-circle">85</div>
+              <div class="real-feel-circle">87</div>
+              <div class="time-date-circle">8/17 @ 9:30am</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="precipitation-forecast">No rain for next 6 hours</div>
+          </div>
+          <div class="current-weather-conditions">
+            <div class="row">
+              <div class="col-2">
+                <div class="current-wind">Wind:</div>
+                <div class="current-humidity">Humdity:</div>
+                <div class="uv-index">UV Index:</div>
+              </div>
+              <div class="col-2">
+                <div class="current-high">High:</div>
+                <div class="current-low">Low:</div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="future-forecast">
+            <div class="row">
+              <div class="col-4">
+                <div class="future-date">Mon</div>
+                <div class="future-weather-image">🌞</div>
+                <span class="future-high">92</span>
+                <span class="future-low">71</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <p>This Weather App coded with Open Source by Jennifer Holliday</p>
     </main>
     <script src="src/index.js"></script>
   </body>
