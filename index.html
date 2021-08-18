@@ -10,9 +10,12 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
 
     <title>Simply Weather 2.0</title>
@@ -28,15 +31,32 @@
                 value="Enter a City or Zipcode"
                 class="city-search-bar"
               />
-              <input type="button" value="Search" class="city-search-button" />
-               <input type="submit" value="Current Location" class="location-submit-button" />
+              <input
+                type="button"
+                value="Search"
+                class="btn btn-warning"
+                id="city-search-button"
+              />
+              <input
+                type="submit"
+                value="Current Location"
+                class="btn btn-warning"
+                id="location-submit-button"
+              />
             </form>
           </div>
           <div class="current-forecast">
             <div class="circle">
-              <div class="current-weather-icon">Icon</div>
-              <div class="temperature-circle">85</div>
-              <div class="real-feel-circle">87</div>
+              <div class="current-weather-image">
+                <img
+                  src="images/weather-image.png"
+                  alt="Weather Image"
+                  width="50px"
+                />
+              </div>
+              <div class="temperature-circle">85℉</div>
+              <span class="real-feel-circle">Real Feel: </span
+              ><span class="real-feel-temp">87℉</span>
               <div class="time-date-circle">8/17 @ 9:30am</div>
             </div>
           </div>
@@ -44,24 +64,85 @@
             <div class="precipitation-forecast">No rain for next 6 hours</div>
           </div>
           <div class="current-weather-conditions">
-            <div class="row">
-              <div class="col-2">
-                <div class="current-wind">Wind:</div>
-                <div class="current-humidity">Humdity:</div>
-                <div class="uv-index">UV Index:</div>
+            <div class="row justify-content-evenly">
+              <div class="col-4">
+                <ul>
+                  <li>
+                    <span class="wind">Wind: </span
+                    ><span class="current-wind"> mph</span>
+                  </li>
+                  <li>
+                    <span class="humidity">Humidity: </span
+                    ><span class="current-humidity"> %</span>
+                  </li>
+                  <li>
+                    <span class="uv-index">UV Index: </span
+                    ><span class="current-uv-index"> </span>
+                  </li>
+                </ul>
               </div>
-              <div class="col-2">
-                <div class="current-high">High:</div>
-                <div class="current-low">Low:</div>
+              <div class="col-4">
+                <ul>
+                  <li>
+                    <span class="high">High:</span>
+                    <span class="current-high"> ℉</span>
+                  </li>
+                  <li>
+                    <span class="low">Low:</span>
+                    <span class="current-low"> ℉</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <hr />
           <div class="future-forecast">
             <div class="row">
-              <div class="col-4">
+              <div class="col-3">
                 <div class="future-date">Mon</div>
-                <div class="future-weather-image">🌞</div>
+                <div class="future-weather-image">
+                  <img
+                    src="images/weather-image.png"
+                    alt="Weather Image"
+                    width="25px"
+                  />
+                </div>
+                <span class="future-high">92</span>
+                <span class="future-low">71</span>
+              </div>
+              <div class="col-3">
+                <div class="future-date">Tues</div>
+                <div class="future-weather-image">
+                  <img
+                    src="images/weather-image.png"
+                    alt="Weather Image"
+                    width="25px"
+                  />
+                </div>
+                <span class="future-high">92</span>
+                <span class="future-low">71</span>
+              </div>
+              <div class="col-3">
+                <div class="future-date">Wed</div>
+                <div class="future-weather-image">
+                  <img
+                    src="images/weather-image.png"
+                    alt="Weather Image"
+                    width="25px"
+                  />
+                </div>
+                <span class="future-high">92</span>
+                <span class="future-low">71</span>
+              </div>
+              <div class="col-3">
+                <div class="future-date">Thurs</div>
+                <div class="future-weather-image">
+                  <img
+                    src="images/weather-image.png"
+                    alt="Weather Image"
+                    width="25px"
+                  />
+                </div>
                 <span class="future-high">92</span>
                 <span class="future-low">71</span>
               </div>
@@ -70,7 +151,6 @@
         </div>
       </div>
       <p>This Weather App coded with Open Source by Jennifer Holliday</p>
-    </main>
     </div>
     <script src="src/index.js"></script>
   </body>
