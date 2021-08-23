@@ -10,7 +10,7 @@
 }
 .container {
   width: 750px;
-  margin-top: 45px;
+  margin-top: 25px;
   background-color: white;
   padding: 15px 15px 15px 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
@@ -72,10 +72,17 @@
   color: white;
 }
 
+.cityName {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 15px;
+  font-style: italic;
+  font-weight: 500;
+}
 .circle {
   display: block;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 15px;
   width: 220px;
   height: 220px;
   line-height: 30px;
@@ -92,7 +99,7 @@
 }
 
 .current-weather-image {
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 5px;
 }
 
@@ -124,6 +131,12 @@ ul {
   font-size: 18px;
 }
 
+.time-date {
+  text-align: center;
+  font-style: italic;
+  font-size: 10px;
+}
+
 .future-forecast {
   text-align: center;
 }
@@ -139,6 +152,6 @@ ul {
 p {
   text-align: center;
   font-size: 10px;
-  padding-top: 10px;
-  padding-bottom: 25px;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }

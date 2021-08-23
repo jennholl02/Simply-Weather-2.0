@@ -29,6 +29,8 @@
               <input
                 type="search"
                 value="Enter a City or Zipcode"
+                autocomplete="off"
+                autofocus="on"
                 class="city-search-bar"
               />
               <input
@@ -44,6 +46,7 @@
                 id="location-submit-button"
               />
             </form>
+            <div class="cityName" id="city-name">Denver</div>
           </div>
           <div class="current-forecast">
             <div class="circle">
@@ -57,7 +60,6 @@
               <div class="temperature-circle">85℉</div>
               <span class="real-feel-circle">Real Feel: </span
               ><span class="real-feel-temp">87℉</span>
-              <div class="time-date-circle">8/17 @ 9:30am</div>
             </div>
           </div>
           <div class="row">
@@ -94,6 +96,12 @@
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="time-date">
+            <span>Last Updated: </span>
+            <span class="time-date-updated" id="time-date-updated">
+              August 23, 2021 at 4:00pm</span
+            >
           </div>
           <hr />
           <div class="future-forecast">
