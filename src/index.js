@@ -2,13 +2,14 @@
 //input = city-search-bar
 //city= city-name
 
-function searchCity(event) {
+function cityInput(event) {
   event.preventDefault();
-  let searchInput = document.querySelector("#city-search-bar");
+  let citySearch = document.querySelector("#city-search-input");
 
-  let namePlacement = document.querySelector("#city-name");
-  namePlacement.innerHTML = `${searchInput.value}`;
-
-  let citySearch = document.querySelector("#city-form");
-  citySearch.addEventListener("submit", searchCity);
+  let cityNameInput = document.querySelector("#city-name");
+  cityNameInput.innerHTML = `${citySearch.value}`;
 }
+let searchBar = document.querySelector("#city-form");
+searchBar.addEventListener("submit", cityInput);
+
+console.log(cityInput);
