@@ -36,6 +36,7 @@
                 class="city-search-bar"
                 id="city-search-input"
               />
+
               <input
                 type="submit"
                 value="Search"
@@ -46,6 +47,7 @@
                 type="submit"
                 value="Current Location"
                 class="btn btn-warning"
+                onclick="ClearFields();"
                 id="location-submit-button"
               />
             </form>
@@ -60,29 +62,25 @@
                   width="50px"
                 />
               </div>
-              <div class="temperature-circle">85℉</div>
+              <div class="temperature-circle" id="current-temp"></div>
               <span class="real-feel-circle">Real Feel: </span
-              ><span class="real-feel-temp">87℉</span>
+              ><span class="real-feel-temp" id="current-real-feel"></span>
+              <div class="description" id="current-description"></div>
             </div>
           </div>
-          <div class="row">
-            <div class="precipitation-forecast">No rain for next 6 hours</div>
-          </div>
+
           <div class="current-weather-conditions">
             <div class="row justify-content-evenly">
               <div class="col-4">
                 <ul>
                   <li>
                     <span class="wind">Wind: </span
-                    ><span class="current-wind"> mph</span>
+                    ><span class="current-wind" id="current-wind"></span>
                   </li>
                   <li>
                     <span class="humidity">Humidity: </span
-                    ><span class="current-humidity"> %</span>
-                  </li>
-                  <li>
-                    <span class="uv-index">UV Index: </span
-                    ><span class="current-uv-index"> </span>
+                    ><span class="current-humidity" id="current-humidity">
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -90,11 +88,11 @@
                 <ul>
                   <li>
                     <span class="high">High:</span>
-                    <span class="current-high"> ℉</span>
+                    <span class="current-high" id="current-high"> </span>
                   </li>
                   <li>
                     <span class="low">Low:</span>
-                    <span class="current-low"> ℉</span>
+                    <span class="current-low" id="current-low"> </span>
                   </li>
                 </ul>
               </div>
