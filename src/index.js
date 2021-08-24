@@ -72,6 +72,12 @@ function showTemperature(response) {
   let currentLow = Math.round(response.data.main.temp_min);
   let insertLow = document.querySelector("#current-low");
   insertLow.innerHTML = `${currentLow} ℉`;
+
+  let currentImage = document.querySelector("#current-image");
+  currentImage.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(city) {
