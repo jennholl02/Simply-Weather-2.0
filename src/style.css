@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.city-search-bar {
+#city-search-input {
   width: 350px;
   height: 40px;
   text-align: center;
@@ -149,14 +149,22 @@ ul {
   font-size: 12px;
 }
 
-.future-forecast {
+#future-weather-image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  width: 55px;
+}
+
+.future-date {
   text-align: center;
+  font-size: 18px;
 }
 
-.future-weather-image {
-  padding-bottom: 8px;
+.forecast-highlow {
+  text-align: center;
+  font-size: 18px;
 }
-
 .future-high {
   font-weight: bold;
 }
