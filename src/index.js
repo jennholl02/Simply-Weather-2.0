@@ -157,11 +157,11 @@ function showCurrentLocation(position) {
   axios.get(apiUrl).then(showForecastElements);
 }
 
-function getCurrentLocation() {
-  navigator.geolocation.getCurrentLocation(showCurrentLocation);
+function getCurrentPosition() {
+  navigator.geolocation.getCurrentPosition(showCurrentLocation);
 }
 
 let currentLocation = document.querySelector("#location-submit-button");
-currentLocation.addEventListener("click", getCurrentLocation);
+currentLocation.addEventListener("click", getCurrentPosition);
 
 search("Denver");
